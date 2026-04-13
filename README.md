@@ -1,6 +1,5 @@
-# customer-conversion-funnel-analysis
-End-to-end customer funnel analysis using SQL and Python to identify drop-off points and improve conversion performance.
 # Customer Conversion Funnel Analysis
+End-to-end customer funnel analysis using SQL and Python to identify drop-off points and improve conversion performance.
 
 ## 1. Business Context
 In digital platforms such as retail banking and e-commerce, understanding the customer journey is critical to improving conversion and user experience. Identifying where users drop off in the funnel helps prioritize product and UX improvements.
