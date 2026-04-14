@@ -110,7 +110,6 @@ Note: Exact numbers may vary depending on data filtering and aggregation logic.
 - Add to Cart → Purchase: 58.3%
 - Overall Conversion: 19.0%
 
-- 
 ## 8. Category-level Funnel Analysis
 
 To further understand conversion behavior, the funnel was analyzed across different product categories.
@@ -119,7 +118,6 @@ To further understand conversion behavior, the funnel was analyzed across differ
 - Category-level analysis shows significant variation in conversion rates across item categories.
 - Some categories exhibit high view volume but low add-to-cart rates, indicating weak user engagement.
 - Other categories show relatively strong cart-to-purchase conversion, suggesting higher purchase intent once users commit.
-
 
 ### Business Interpretation
 
