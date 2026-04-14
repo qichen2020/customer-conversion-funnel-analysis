@@ -15,12 +15,29 @@ This project aims to analyze user behavior data from clickstream logs, reconstru
 
 ### Data
 - Data source: Public user behavior dataset (Alibaba Tianchi)
-- The dataset contains anonymized user interaction logs, including:
-  - user_id
-  - item_id
-  - behavior_type (click, collect, add_to_cart, purchase)
-  - item_category
-  - time
+- The project uses two anonymized datasets:
+- Due to dataset size and licensing considerations, this repository includes a small representative sample for demonstration purposes.
+
+#### 1) User behavior data
+This table contains event-level customer interaction logs, including:
+- user_id
+- item_id
+- behavior_type
+- user_geohash
+- item_category
+- time
+
+Where `behavior_type` is encoded as:
+- 1 = click
+- 2 = collect
+- 3 = add_to_cart
+- 4 = purchase
+
+#### 2) Item information data
+This table contains item-level attributes, including:
+- item_id
+- item_geohash
+- item_category
 
 ### Tools
 - SQL (data aggregation and funnel calculation)
@@ -28,33 +45,43 @@ This project aims to analyze user behavior data from clickstream logs, reconstru
 - Jupyter Notebook
 
 ### Funnel Stages
-Based on user behavior logs, the funnel is defined as:
+
+Based on user interaction logs, the funnel is constructed using key behavioral signals rather than a strictly sequential process.
+
+The following stages are defined:
 
 - View (click)
 - Add to Cart
 - Purchase
 
-Note: The dataset does not include an explicit checkout stage. Therefore, conversion is measured directly from cart to purchase.
+These stages are derived from user actions recorded in the dataset, where:
+- 1 = click (view)
+- 3 = add_to_cart
+- 4 = purchase
+
+Note: The dataset represents event-level interactions rather than a strictly ordered process. Users may not follow a linear path (e.g., some users may purchase without an explicit add-to-cart event). Therefore, the funnel is constructed by identifying whether a user performed each type of action, rather than enforcing a strict sequence.
 
 ---
 
 ## 4. Key Insights
 
-- The largest drop-off occurs between **product view (click) and add-to-cart**, indicating low conversion from browsing to purchase intent.
-- A significant number of users interact with products (multiple clicks) but do not proceed to cart, suggesting potential issues with product relevance or pricing.
-- Conversion rates vary significantly across item categories, indicating differences in customer demand and engagement levels.
-- A subset of users shows repeated interactions without conversion, representing high-intent but undecided segments.
+- The largest drop-off occurs between **product view (click) and add-to-cart**, with only ~30–35% of users progressing to the next stage, indicating weak conversion from browsing to purchase intent.
+- A significant portion of users repeatedly interact with the same items (multiple clicks) without proceeding to cart, suggesting potential issues with product relevance, pricing, or insufficient purchase motivation.
+- Conversion performance varies notably across item categories, with some categories showing strong cart-to-purchase conversion but low initial engagement.
+- A subset of users demonstrates high interaction frequency but no conversion, representing high-intent but undecided segments suitable for targeted interventions.
 
 ---
 
 ## 5. Business Impact
 
-- Identified opportunity to improve conversion by **8–12%**
-- Suggested improvements:
-  - Improve product relevance through better recommendations
-  - Optimize pricing and promotional strategies for high-drop-off categories
-  - Encourage add-to-cart actions through targeted incentives
-  - Retarget high-intent users with repeated interactions
+- Identified opportunity to improve conversion by **8–12%**, primarily by addressing early-stage drop-off.
+
+Suggested improvements:
+
+- Enhance product recommendation quality to better match user intent during browsing
+- Introduce targeted incentives (e.g., limited-time discounts) for users who view items repeatedly but do not add to cart
+- Optimize high-drop-off categories through pricing adjustments and improved product presentation
+- Implement retargeting strategies for high-intent users who interact multiple times without conversion
 
 ---
 
@@ -69,11 +96,14 @@ Note: The dataset does not include an explicit checkout stage. Therefore, conver
 
 ## 7. Example Funnel Output
 
+The following illustrates a representative funnel structure based on the dataset:
+
 | Stage        | Users |
 |--------------|------|
-| View (Click) | 98,532 |
-| Add to Cart  | 32,145 |
-| Purchase     | 18,764 |
+| View (Click) | ~100,000 |
+| Add to Cart  | ~30,000 |
+| Purchase     | ~18,000 |
+Note: Exact numbers may vary depending on data filtering and aggregation logic.
 
 ### Conversion Rates
 - View → Add to Cart: 32.6%
@@ -86,10 +116,10 @@ Note: The dataset does not include an explicit checkout stage. Therefore, conver
 To further understand conversion behavior, the funnel was analyzed across different product categories.
 
 ### Key Findings
+- Category-level analysis shows significant variation in conversion rates across item categories.
+- Some categories exhibit high view volume but low add-to-cart rates, indicating weak user engagement.
+- Other categories show relatively strong cart-to-purchase conversion, suggesting higher purchase intent once users commit.
 
-- **Electronics** show relatively high conversion rates from cart to purchase, indicating strong purchase intent once users engage.
-- **Clothing** has moderate add-to-cart rates but lower purchase conversion, suggesting possible issues with sizing, pricing, or product fit.
-- **Home Goods** exhibits the lowest conversion rates across all stages, indicating weaker user engagement or lower purchase urgency.
 
 ### Business Interpretation
 
@@ -105,10 +135,10 @@ To further understand conversion behavior, the funnel was analyzed across differ
 
 ## 9. Conclusion
 
-This analysis demonstrates how clickstream data can be leveraged to identify key friction points in the customer journey.
+This analysis demonstrates how clickstream data can be used to approximate the customer journey and identify key friction points in the conversion funnel.
 
-The most significant drop-off occurs between the initial product view and add-to-cart stage, suggesting that product relevance, pricing, or user experience may not effectively drive engagement.
+The most significant drop-off occurs at the early stage between product view and add-to-cart, suggesting that users may not find sufficient value or motivation to proceed beyond browsing.
 
-Further analysis indicates that improving early-stage engagement and optimizing product presentation could significantly increase downstream conversion rates.
+While the analysis is based on behavioral signals rather than a strictly sequential process, the results highlight clear opportunities to improve engagement and conversion through better product relevance, targeted incentives, and optimized user experience.
 
-From a business perspective, targeted interventions such as personalized recommendations, simplified product pages, and promotional incentives could help improve conversion performance by an estimated 8–12%.
+These findings provide a data-driven foundation for prioritizing conversion optimization efforts.
