@@ -81,13 +81,7 @@ Note: The dataset does not include an explicit checkout stage. Therefore, conver
 - Overall Conversion: 19.0%
 
 - 
-## 8. Visualization
-
-The funnel below illustrates the user conversion flow across key interaction stages derived from clickstream data.
-
-![Funnel Chart](images/funnel_chart.png)
-
-## 8.1 Category-level Funnel Analysis
+## 8. Category-level Funnel Analysis
 
 To further understand conversion behavior, the funnel was analyzed across different product categories.
 
