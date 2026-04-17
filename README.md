@@ -100,15 +100,15 @@ The following illustrates a representative funnel structure based on the dataset
 
 | Stage        | Users |
 |--------------|------|
-| View (Click) | ~34 |
-| Add to Cart  | ~13 |
-| Purchase     | ~9 |
+| View (Click) | 34 |
+| Add to Cart  | 13 |
+| Purchase     | 9 |
 Note: Exact numbers may vary depending on data filtering and aggregation logic.
 
 ### Conversion Rates
-- View → Add to Cart: 32.6%
-- Add to Cart → Purchase: 58.3%
-- Overall Conversion: 19.0%
+- View → Add to Cart: 38.24%
+- Add to Cart → Purchase: 69.23%
+- Overall Conversion: 26.47%
 
 ## 8. Category-level Funnel Analysis
 
