@@ -115,21 +115,11 @@ Note: Exact numbers may vary depending on data filtering and aggregation logic.
 To further understand conversion behavior, the funnel was analyzed across different product categories.
 
 ### Key Findings
-- Category-level analysis shows significant variation in conversion rates across item categories.
-- Some categories exhibit high view volume but low add-to-cart rates, indicating weak user engagement.
-- Other categories show relatively strong cart-to-purchase conversion, suggesting higher purchase intent once users commit.
-
-### Business Interpretation
-
-- Categories with high view but low cart rates may suffer from poor product relevance or unclear value propositions.
-- Categories with high cart but low purchase rates may indicate pricing sensitivity or checkout friction.
-
-### Recommendations
-
-- Improve product positioning and recommendations for low-performing categories
-- Introduce targeted promotions (e.g., discounts) for categories with high cart abandonment
-- Optimize product pages for categories with high browsing but low engagement
-- The lowest-performing categories were identified based on conversion rates, highlighting areas with the greatest opportunity for improvement.
+- The overall conversion rate from product view to purchase is approximately 26%.
+- The largest drop-off occurs between the view and add-to-cart stages,indicating that many users browse products but do not show strong purchase intent.
+- Category-level analysis shows variation in conversion performance, with some categories achieving higher view-to-cart rates.However, due to the limited sample size, these results should be interpreted cautiously. With larger datasets, this approach can effectively identify high-performing and underperforming categories.
+- A group of users exhibits high engagement, with frequent clicks and multiple add-to-cart actions,
+but no completed purchases. These users represent high-intent but undecided customers, suggesting opportunities for targeted interventions such as promotions, personalized recommendations, or checkout optimization.
 
 ## 9. Conclusion
 
