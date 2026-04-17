@@ -114,19 +114,12 @@ Note: Exact numbers may vary depending on data filtering and aggregation logic.
 
 To further understand conversion behavior, the funnel was analyzed across different product categories.
 
-### Key Findings
-- The overall conversion rate from product view to purchase is approximately 26%.
-- The largest drop-off occurs between the view and add-to-cart stages,indicating that many users browse products but do not show strong purchase intent.
-- Category-level analysis shows variation in conversion performance, with some categories achieving higher view-to-cart rates.However, due to the limited sample size, these results should be interpreted cautiously. With larger datasets, this approach can effectively identify high-performing and underperforming categories.
-- A group of users exhibits high engagement, with frequent clicks and multiple add-to-cart actions,
-but no completed purchases. These users represent high-intent but undecided customers, suggesting opportunities for targeted interventions such as promotions, personalized recommendations, or checkout optimization.
-
 ## 9. Conclusion
 
-This analysis demonstrates how clickstream data can be used to approximate the customer journey and identify key friction points in the conversion funnel.
+The overall conversion rate from product view to purchase is approximately 26%.
 
-The most significant drop-off occurs at the early stage between product view and add-to-cart, suggesting that users may not find sufficient value or motivation to proceed beyond browsing.
+The largest drop-off occurs between the view and add-to-cart stages,indicating that many users browse products but do not show strong purchase intent.
 
-While the analysis is based on behavioral signals rather than a strictly sequential process, the results highlight clear opportunities to improve engagement and conversion through better product relevance, targeted incentives, and optimized user experience.
+Category-level analysis shows variation in conversion performance, with some categories achieving higher view-to-cart rates.However, due to the limited sample size, these results should be interpreted cautiously. With larger datasets, this approach can effectively identify high-performing and underperforming categories.
 
-These findings provide a data-driven foundation for prioritizing conversion optimization efforts.
+A group of users exhibits high engagement, with frequent clicks and multiple add-to-cart actions, but no completed purchases. These users represent high-intent but undecided customers, suggesting opportunities for targeted interventions such as promotions, personalized recommendations, or checkout optimization.
