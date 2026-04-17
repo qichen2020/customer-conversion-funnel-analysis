@@ -100,9 +100,9 @@ The following illustrates a representative funnel structure based on the dataset
 
 | Stage        | Users |
 |--------------|------|
-| View (Click) | ~100,000 |
-| Add to Cart  | ~30,000 |
-| Purchase     | ~18,000 |
+| View (Click) | ~34 |
+| Add to Cart  | ~13 |
+| Purchase     | ~9 |
 Note: Exact numbers may vary depending on data filtering and aggregation logic.
 
 ### Conversion Rates
