@@ -61,16 +61,12 @@ These stages are derived from user actions recorded in the dataset, where:
 
 Note: The dataset represents event-level interactions rather than a strictly ordered process. Users may not follow a linear path (e.g., some users may purchase without an explicit add-to-cart event). Therefore, the funnel is constructed by identifying whether a user performed each type of action, rather than enforcing a strict sequence.
 
----
-
 ## 4. Key Insights
 
 - The largest drop-off occurs between **product view (click) and add-to-cart**, with only ~30–35% of users progressing to the next stage, indicating weak conversion from browsing to purchase intent.
 - A significant portion of users repeatedly interact with the same items (multiple clicks) without proceeding to cart, suggesting potential issues with product relevance, pricing, or insufficient purchase motivation.
 - Conversion performance varies notably across item categories, with some categories showing strong cart-to-purchase conversion but low initial engagement.
 - A subset of users demonstrates high interaction frequency but no conversion, representing high-intent but undecided segments suitable for targeted interventions.
-
----
 
 ## 5. Business Impact
 
@@ -83,16 +79,12 @@ Suggested improvements:
 - Optimize high-drop-off categories through pricing adjustments and improved product presentation
 - Implement retargeting strategies for high-intent users who interact multiple times without conversion
 
----
-
 ## 6. Deliverables
 
 - SQL scripts for funnel calculation (`sql/funnel_analysis.sql`)
 - Python notebook for data processing and visualization (`notebooks/funnel_analysis.ipynb`)
 - Funnel visualization (`images/funnel_chart.png`)
 - Category-level conversion analysis (optional extension)
-
----
 
 ## 7. Example Funnel Output
 
@@ -110,11 +102,7 @@ Note: Exact numbers may vary depending on data filtering and aggregation logic.
 - Add to Cart → Purchase: 69.23%
 - Overall Conversion: 26.47%
 
-## 8. Category-level Funnel Analysis
-
-To further understand conversion behavior, the funnel was analyzed across different product categories.
-
-## 9. Conclusion
+## 8. Conclusion
 
 The overall conversion rate from product view to purchase is approximately 26%.
 
