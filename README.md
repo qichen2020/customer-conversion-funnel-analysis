@@ -1,5 +1,17 @@
 # E-commerce Funnel Optimization
-End-to-end customer funnel analysis using SQL and Python to identify drop-off points and improve conversion performance.
+
+## Business Objective
+Identify drop-off points in the customer conversion funnel to improve conversion performance.
+
+## Key Results
+• Identified major drop-off stage in checkout process  
+• Provided actionable insights to improve conversion rates  
+
+## Tools
+SQL, Python
+
+## Overview
+End-to-end funnel analysis using SQL and Python to extract, transform, and analyze user behavior data.
 
 ## 1. Business Context
 
