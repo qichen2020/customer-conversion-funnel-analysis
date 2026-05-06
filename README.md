@@ -1,4 +1,4 @@
-# Customer Conversion Funnel Analysis
+# E-commerce Funnel Optimization
 End-to-end customer funnel analysis using SQL and Python to identify drop-off points and improve conversion performance.
 
 ## 1. Business Context
